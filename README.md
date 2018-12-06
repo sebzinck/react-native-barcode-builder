@@ -70,4 +70,8 @@ You can find more info about the supported barcodes in the [JsBarcode README](ht
     <td><code>onError</code></td>
     <td>Handler for invalid barcode of selected format</td>
   </tr>
+  <tr>
+    <td><code>onLayout</code></td>
+    <td>Handler for component layout</td>
+  </tr>
 </table>
