@@ -27,9 +27,7 @@ export default class Barcode extends PureComponent {
     /* Handle error for invalid barcode of selected format */
     onError: PropTypes.func,
     /* Handle component layout */
-    onLayout: PropTypes.func,
-    /* Handle component layout */
-    style: PropTypes.object
+    onLayout: PropTypes.func
 
   };
 
@@ -173,7 +171,7 @@ export default class Barcode extends PureComponent {
       backgroundColor: this.props.background
     };
     return (
-      <View style={[styles.svgContainer, backgroundStyle, this.props.style]} onLayout={this.props.onLayout}>
+      <View style={[styles.svgContainer, backgroundStyle]} onLayout={this.props.onLayout}>
         <Surface height={this.props.height} width={this.state.barCodeWidth}>
           <Shape d={this.state.bars} fill={this.props.lineColor} />
         </Surface>
